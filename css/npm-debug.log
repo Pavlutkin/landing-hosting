@@ -1,0 +1,56 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'normalize.css' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData normalize.css
+8 silly fetchOtherPackageData normalize.css
+9 silly cache add args [ 'normalize.css', null ]
+10 verbose cache add spec normalize.css
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'normalize.css',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'normalize.css',
+11 silly cache add   spec: '/home/alex/Рабочий стол/Project/css/normalize.css',
+11 silly cache add   type: 'local' }
+12 silly addLocalTarball shasum (computed) b661462fc835c97bc1029f9b1f3e1e1ec26fe15c
+13 verbose addTmpTarball /home/alex/Рабочий стол/Project/css/normalize.css not in flight; adding
+14 verbose addTmpTarball validating metadata from /home/alex/Рабочий стол/Project/css/normalize.css
+15 verbose tar unpack /home/alex/Рабочий стол/Project/css/normalize.css
+16 verbose tar unpacking to /tmp/npm-29839-f23aa1e3/unpack-f7016ff9
+17 silly gentlyRm /tmp/npm-29839-f23aa1e3/unpack-f7016ff9 is being purged
+18 verbose gentlyRm don't care about contents; nuking /tmp/npm-29839-f23aa1e3/unpack-f7016ff9
+19 silly gunzTarPerm modes [ '775', '664' ]
+20 error not a package /home/alex/Рабочий стол/Project/css/normalize.css
+21 error addLocal Could not install /home/alex/Рабочий стол/Project/css/normalize.css
+22 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json'
+22 silly fetchPackageMetaData     at Error (native)
+22 silly fetchPackageMetaData  error for normalize.css { [Error: ENOENT: no such file or directory, open '/tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json']
+22 silly fetchPackageMetaData   errno: -2,
+22 silly fetchPackageMetaData   code: 'ENOENT',
+22 silly fetchPackageMetaData   syscall: 'open',
+22 silly fetchPackageMetaData   path: '/tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json' }
+23 silly rollbackFailedOptional Starting
+24 silly rollbackFailedOptional Finishing
+25 silly runTopLevelLifecycles Starting
+26 silly runTopLevelLifecycles Finishing
+27 silly install printInstalled
+28 verbose stack Error: ENOENT: no such file or directory, open '/tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json'
+28 verbose stack     at Error (native)
+29 verbose cwd /home/alex/Рабочий стол/Project/css
+30 error Linux 4.10.0-27-generic
+31 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "normalize.css"
+32 error node v4.2.6
+33 error npm  v3.5.2
+34 error path /tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json
+35 error code ENOENT
+36 error errno -2
+37 error syscall open
+38 error enoent ENOENT: no such file or directory, open '/tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json'
+39 error enoent ENOENT: no such file or directory, open '/tmp/npm-29839-f23aa1e3/unpack-f7016ff9/package.json'
+39 error enoent This is most likely not a problem with npm itself
+39 error enoent and is related to npm not being able to find a file.
+40 verbose exit [ -2, true ]
