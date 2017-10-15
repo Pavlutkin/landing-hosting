@@ -5,7 +5,6 @@ var slider = (function () {
 		slideList = document.querySelector('.slider-list'),
 		position = 0,
 		indxSlide = 0;
-	var	allImg = slideList.querySelectorAll('img');
 	var checkSlide = document.querySelector('.check-slide');
 
 
@@ -21,18 +20,18 @@ var slider = (function () {
 
 	function moveLeft() {
 		slideLeft.style.display = 'flex';
-		position += 1200;
+		position += 1170;
 		slideList.style.marginLeft = '-' + position + 'px';
 		checkSlideRight(indxSlide);
 		++indxSlide;
-		if (position === 2400) slideRight.style.display = 'none';
+		if (position === 2340) slideRight.style.display = 'none';
 	}
 	slideRight.addEventListener('click', moveLeft);
 
 
 	function moveRight() {
 		slideRight.style.display = 'flex';
-		position -= 1200;
+		position -= 1170;
 		slideList.style.marginLeft = '-' + position + 'px';
 		checkSlideLeft(indxSlide);
 		--indxSlide;
