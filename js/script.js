@@ -1,8 +1,8 @@
 "use strict";
 var slider = (function () {
-	var slideLeft = document.querySelector('.slide-left'),
-		slideRight = document.querySelector('.slide-right'),
-		slideList = document.querySelector('.slider-list'),
+	var slideLeft = document.querySelector('.slider__button-left'),
+		slideRight = document.querySelector('.slider__button-right'),
+		slideList = document.querySelector('.slider__list'),
 		position = 0,
 		indxSlide = 0;
 	var checkSlide = document.querySelector('.check-slide');

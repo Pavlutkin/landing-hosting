@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
@@ -13,45 +13,48 @@
 		<header class="header">
 			<div class="header-top-wrap">
 				<a class="logo" href="#"><img src="img/logo.png" alt="logo" width="149px" height="31px"></a>
-				<div class="login">
-					<span class="login__support">
+				<div class="top-menu">
+					<span class="top-menu__support">
 						Support: <a href="#">info@webhosting.com</a>
 					</span>
-					<span class="login__register">
+					<span class="top-menu__register">
 						<a href="#">Register</a>
 					</span>
-					<span class="login__login">
+					<span class="top-menu__login">
 						<a href="#">Login</a>
 					</span> 
 				</div>
 			</div>
 			
 			<div class="header-bottom-wrap">
-				<nav class="nav-menu">
-					<div>HOME</div>
-					<div>ABOUT US</div>
-					<div>SERVICE</div>
-					<div>HOSTING PLANS</div>
-					<div>DOMAIN</div>
-					<div>FAQ</div>
-					<div>TESTIMONIALS</div>
-					<div>BLOG</div>
-					<div>SUPPORT</div>
-					<div>CONTACT US</div>
+				<nav class="main-menu">
+					<a href="#">HOME</a>
+					<a href="#">ABOUT US</a>
+					<a href="#">SERVICE</a>
+					<a href="#">HOSTING PLANS</a>
+					<a href="#">DOMAIN</a>
+					<a href="#">FAQ</a>
+					<a href="#">TESTIMONIALS</a>
+					<a href="#">BLOG</a>
+					<a href="#">SUPPORT</a>
+					<a href="#">CONTACT US</a>
 				</nav>
 			</div>
 		</header>
 		
+			
+		<main class="main">
+
 			<div class="slider-background">
 				<div class="slider">
-					<ul class="slider-list">
+					<ul class="slider__list">
 						<li><img src="img/banner.jpg" alt=""></li>
 						<li><img src="img/banner.jpg" alt=""></li>
 						<li><img src="img/banner.jpg" alt=""></li>
 					</ul>
 
-					<div class="slide-left">&lt;</div>
-					<div class="slide-right">&gt;</div>
+					<div class="slider__button-left">&lt;</div>
+					<div class="slider__button-right">&gt;</div>
 					<div class="check-slide">
 						<i class="check-slide__one check-item fa fa-circle-o" aria-hidden="true"></i>
 						<i class="check-slide__two fa fa-circle-o" aria-hidden="true"></i>
@@ -59,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-		<main class="main">		
+
 			<div class="search-domain-background">
 				<div class="search-domain">
 					<div class="search-domain__icon">
@@ -87,6 +90,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="benefits-background">
 				<div class="benefits">
 					<div class="benefits-icon">
@@ -97,41 +101,74 @@
 						<h1>BENEFITS</h1>
 					</div>
 					<div class="benefits-wrap">
+
 						<div class="benefits__uptime">
-							<i class="fa fa-ioxhost fa-4x"></i>
-							<h2>99.9% UPTIME</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<div class="benefits__icon-wrap">
+								<i class="fa fa-ioxhost fa-4x"></i>
+							</div>
+							<div class="benefits__description-wrap">
+								<h2>99.9% UPTIME</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							</div>
 						</div>
+
 						<div class="benefits__support">
-							<i class="fa fa-comments-o fa-4x"></i>
-							<h2>24/7/365 SUPPORT</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<div class="benefits__icon-wrap">
+								<i class="fa fa-comments-o fa-4x"></i>
+							</div>
+							<div class="benefits__description-wrap">
+								<h2>24/7/365 SUPPORT</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							</div>
 						</div>
+
 						<div class="benefits__protectPC">
-							<i class="fa fa-laptop fa-4x"></i>
-							<h2>PROTECT YOUR PC</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<div class="benefits__icon-wrap">
+								<i class="fa fa-laptop fa-4x"></i>
+							</div>
+							<div class="benefits__description-wrap">
+								<h2>PROTECT YOUR PC</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							</div>
 						</div>
+
 						<div class="benefits__dnsControl">
-							<i class="fa fa-cog fa-5x"></i>
-							<h2>DNS CONTROL</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<div class="benefits__icon-wrap">
+								<i class="fa fa-cog fa-5x"></i>
+							</div>
+							<div class="benefits__description-wrap">
+								<h2>DNS CONTROL</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							</div>
 						</div>
+
 						<div class="benefits__domainTransfer">
-							<i class="fa fa-envelope-o fa-4x benefits__domainTransfer-icon"></i>
-							<h2>DOMAIN TRANSFER</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<div class="benefits__icon-wrap">
+								<i class="fa fa-envelope-o fa-4x benefits__domainTransfer-icon"></i>
+							</div>
+							<div class="benefits__description-wrap">
+								<h2>DOMAIN TRANSFER</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							</div>
 						</div>
+
 						<div class="benefits__security">
-							<i class="fa fa-lock fa-5x"></i>
-							<h2>100% SECURITY</h2>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							<div class="benefits__icon-wrap">
+								<i class="fa fa-lock fa-5x"></i>
+							</div>
+							<div class="benefits__description-wrap">
+								<h2>100% SECURITY</h2>
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
+
 			<div class="hot-background">
 				<div class="hotAndFeatures-wrap">
+
 					<div class="whatsHot">
 						<div class="whatsHot__icon">
 							<i class="fa fa fa-window-minimize fa-lg"></i>
@@ -177,7 +214,7 @@
 							</ul>
 						</div>
 						
-						<a class="features__button" href="#" class="features__button">VIEW ALL</a>
+						<a class="features__button" href="#">VIEW ALL</a>
 						
 						
 					</div>
@@ -316,8 +353,6 @@
 		</footer>
 	</div>
 	<script src="js/script.js"></script>
-	<script>
-		
-	</script>
+	
 </body>
 </html>
