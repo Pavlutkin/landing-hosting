@@ -50,6 +50,13 @@
 	border: none;
 	outline: none;
 	float: left;
+	font-size: 18px;
+	color:$text-form_color;
+}
+
+.newsletter__input::-webkit-input-placeholder::-moz-placeholder
+::-moz-placeholder:-ms-input-placeholder{
+	color:$text-form_color;
 }
 
 .newsletter__input:hover{

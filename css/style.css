@@ -305,12 +305,11 @@ body {
   outline: none;
   border: 0;
   color: #a0a9b6;
-  font-size: 20px; }
+  font-size: 18px; }
 
 .domain-name::-webkit-input-placeholder::-moz-placeholder
 ::-moz-placeholder:-ms-input-placeholder {
-  color: #a0a9b6;
-  font-size: 13.5px; }
+  color: #a0a9b6; }
 
 .domain-name:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
@@ -322,7 +321,8 @@ body {
   background: #fff;
   outline: none;
   border: none;
-  color: #a0a9b6; }
+  color: #a0a9b6;
+  font-size: 18px; }
 
 #select-domain__years:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
@@ -334,7 +334,8 @@ body {
   background: #fff;
   outline: none;
   border: none;
-  color: #a0a9b6; }
+  color: #a0a9b6;
+  font-size: 18px; }
 
 #select-domain__domain:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
@@ -640,7 +641,7 @@ body {
     max-width: 213px;
     width: 81.92307692%; }
     .hosting__block ul li {
-      font-size: 1.4rem;
+      font-size: 14px;
       color: #556b72;
       border-bottom: 1px solid #e1eff4;
       text-align: center;
@@ -722,7 +723,13 @@ body {
   width: 78.71179039%;
   border: none;
   outline: none;
-  float: left; }
+  float: left;
+  font-size: 18px;
+  color: #a0a9b6; }
+
+.newsletter__input::-webkit-input-placeholder::-moz-placeholder
+::-moz-placeholder:-ms-input-placeholder {
+  color: #a0a9b6; }
 
 .newsletter__input:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
