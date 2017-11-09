@@ -1,0 +1,117 @@
+/*****************************SEARCH DOMAIN***********************/
+
+.search-domain-background {
+	background: $background-searchDomain;
+	height: 198px;
+}
+
+.search-domain{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.search-domain__icon{
+	padding-top: 40px;
+}
+
+.fa-search{
+	color: $orange_color;
+}
+
+.search-bottom-wrap{
+	@include flex;
+	justify-content: space-between;
+	margin-top: 8px;
+}
+
+.search-head{
+	margin-top: 5px;
+	max-width: 126px;
+	p{
+		color: $text_color;
+		font-size: 18px;
+		margin-bottom: 5px;
+	}
+	h1{
+		font-weight: $font-weight-extraBold;
+		color: $head-text_color;
+		font-size: 30px;
+	}
+}
+
+.search-domain__form{
+	@include flex;
+	line-height: 55px;
+	outline: none;
+	max-width: 984px;
+	width: 86.31578947%;
+	justify-content: space-between;
+	margin-left: 2.54385965%;
+}
+
+.domain-name{
+	height: 53px;
+	max-width:428px;
+	width: 43.49593496%;
+	outline: none;
+	border: 0;
+	color:$text-form_color;
+	font-size: 20px;
+}
+
+.domain-name::-webkit-input-placeholder::-moz-placeholder
+::-moz-placeholder:-ms-input-placeholder{
+	color:$text-form_color;
+	font-size: 13.5px;
+}
+
+.domain-name:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#select-domain__years{
+	height: 55px;
+	max-width:163px;
+	width: 16.56504065%;
+	background: $white_color;
+	outline: none;
+	border: none;
+	color:$text-form_color;
+}
+
+#select-domain__years:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#select-domain__domain{
+	height: 55px;
+	max-width:163px;
+	width: 16.56504065%;
+	background: $white_color;
+	outline: none;
+	border: none;
+	color:$text-form_color;
+}
+
+#select-domain__domain:hover{
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.button-search{
+	display: inline-block;
+	max-width:195px;
+	width: 19.81707317%;
+	height: 55px;
+	background: $button_color;
+	color: $white_color;
+	text-align: center;
+	line-height: 55px;
+	font-size: 13.5px;
+	font-weight: $font-weight-bold;
+}
+
+.button-search:hover{
+	background: $hover-button_color;
+}
+
+/*****************************SEARCH DOMAIN***********************/

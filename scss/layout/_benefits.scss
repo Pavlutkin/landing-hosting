@@ -1,0 +1,88 @@
+/********************************BENEFITS********************************/
+
+.benefits-background{
+	background: $white_color;
+	height: 543px;
+}
+
+.benefits{
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.benefits-icon{
+	padding-top:53px;
+}
+
+.fa-window-minimize{
+	color: $orange_color;	
+}
+
+.benefits-head{
+    margin-top: 13px;
+    p{
+        color: $text_color;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    h1{
+        font-weight: $font-weight-extraBold;
+        color: $head-text_color;
+        font-size: 30px;
+    }
+}
+
+.benefits-wrap{
+	@include flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+    h2{
+        font-weight: $font-weight-extraBold;
+        color: $head-text_color;
+        font-size: 16px;
+    }
+    p{
+        margin-top: 18px;
+        color: $text_color;
+        font-size: 13.5px;
+        line-height: 1.5;
+    }
+}
+
+.benefits__element{
+	width:358px;
+	margin-top: 35px;
+    @include flex;
+}
+
+.benefits__icon-wrap{
+	margin-right: 27px;
+}
+
+.fa-ioxhost{
+	color: $orange_color;	
+}
+
+.fa-comments-o{
+	color: $orange_color;	
+}
+
+.fa-laptop{
+    color: $orange_color;	
+}
+
+.fa-cog{
+	color: $orange_color;	
+	padding-left: 4px;
+}
+
+.fa-envelope-o{
+	color: $orange_color;
+}
+
+.fa-lock{
+	color: $orange_color;
+	padding-left: 8px;
+}
+
+/********************************BENEFITS********************************/

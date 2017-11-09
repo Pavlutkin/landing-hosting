@@ -1,0 +1,89 @@
+/********************************SLIDER*****************************/
+
+.slider-background{
+	width: 100%;
+	@include flex;
+	max-width: 1970px;
+	justify-content: center;
+	background: $background-slider;
+}
+
+.slider{
+	max-width: 1170px;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider__list{
+	max-width: 9999px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0;
+	transition-property: margin-left;
+	transition-duration: .5s;
+    @include flex;
+    
+    li{
+        max-width: 1170px;
+        width: 100%;
+        @include flex;
+        justify-content: center;
+    }
+}
+
+.slider__button{
+    width:55px;
+	height: 55px;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30px;
+    border:2px solid $white_color;
+	font-size: 30px;
+	color:$white_color;
+	cursor: pointer;
+}
+
+.slider__button:focus{
+    outline: none;
+}
+
+.slider__button-left {
+	display: none;
+	margin-left: 15px;
+	position:absolute;
+	top:44.38%;
+	left: 0.0076%;
+}
+
+.slider__button-right{
+	margin-right: 15px;
+	@include flex;
+	position:absolute;
+	top: 44.38%;
+	right: 0.0076%;
+}
+
+.slider__check-slide{
+	width:4.16%;
+	position: absolute;
+	bottom: 10.5%;
+	left: 47.86%;
+	@include flex;
+	justify-content: space-between;
+    align-items: center;
+}
+.check-slide__one {
+	color: $check-slide-color;
+}
+.check-slide__two{
+	color: $check-slide-color;
+}
+.check-slide__three{
+	color: $check-slide-color;
+}
+.check-item{
+	color: $check-slide-active_color; 
+}
+
+/********************************SLIDER*****************************/

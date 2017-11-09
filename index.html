@@ -12,8 +12,8 @@
 	<div class="wrap">
 		<header class="header">
 			<div class="header-top-wrap">
-				<a class="logo" href="#"><img src="img/logo.png" alt="logo" width="149px" height="31px"></a>
-				<div class="top-menu">
+				<a class="header__logo" href="#"><img src="img/logo.png" alt="logo"></a>
+				<div class="header__top-menu">
 					<span class="top-menu__support">
 						Support: <a href="#">info@webhosting.com</a>
 					</span>
@@ -27,7 +27,7 @@
 			</div>
 			
 			<div class="header-bottom-wrap">
-				<nav class="main-menu">
+				<nav class="header__main-menu">
 					<a href="#">HOME</a>
 					<a href="#">ABOUT US</a>
 					<a href="#">SERVICE</a>
@@ -53,9 +53,9 @@
 						<li><img src="img/banner.jpg" alt=""></li>
 					</ul>
 
-					<div class="slider__button-left">&lt;</div>
-					<div class="slider__button-right">&gt;</div>
-					<div class="check-slide">
+					<div class="slider__button slider__button-left">&lt;</div>
+					<div class="slider__button slider__button-right">&gt;</div>
+					<div class="slider__check-slide">
 						<i class="check-slide__one check-item fa fa-circle-o" aria-hidden="true"></i>
 						<i class="check-slide__two fa fa-circle-o" aria-hidden="true"></i>
 						<i class="check-slide__three fa fa-circle-o" aria-hidden="true"></i>
@@ -102,7 +102,7 @@
 					</div>
 					<div class="benefits-wrap">
 
-						<div class="benefits__uptime">
+						<div class="benefits__element">
 							<div class="benefits__icon-wrap">
 								<i class="fa fa-ioxhost fa-4x"></i>
 							</div>
@@ -112,7 +112,7 @@
 							</div>
 						</div>
 
-						<div class="benefits__support">
+						<div class="benefits__element">
 							<div class="benefits__icon-wrap">
 								<i class="fa fa-comments-o fa-4x"></i>
 							</div>
@@ -122,7 +122,7 @@
 							</div>
 						</div>
 
-						<div class="benefits__protectPC">
+						<div class="benefits__element">
 							<div class="benefits__icon-wrap">
 								<i class="fa fa-laptop fa-4x"></i>
 							</div>
@@ -132,7 +132,7 @@
 							</div>
 						</div>
 
-						<div class="benefits__dnsControl">
+						<div class="benefits__element">
 							<div class="benefits__icon-wrap">
 								<i class="fa fa-cog fa-5x"></i>
 							</div>
@@ -142,9 +142,9 @@
 							</div>
 						</div>
 
-						<div class="benefits__domainTransfer">
+						<div class="benefits__element">
 							<div class="benefits__icon-wrap">
-								<i class="fa fa-envelope-o fa-4x benefits__domainTransfer-icon"></i>
+								<i class="fa fa-envelope-o fa-4x"></i>
 							</div>
 							<div class="benefits__description-wrap">
 								<h2>DOMAIN TRANSFER</h2>
@@ -152,7 +152,7 @@
 							</div>
 						</div>
 
-						<div class="benefits__security">
+						<div class="benefits__element">
 							<div class="benefits__icon-wrap">
 								<i class="fa fa-lock fa-5x"></i>
 							</div>
@@ -233,7 +233,7 @@
 						<h1>HOSTING</h1>
 					</div>
 					<div class="hosting-wrap">
-						<div class="hosting__standardPlan">
+						<div class="hosting__block">
 							<h1>$5</h1>
 							<p>PER MONTH</p>
 							<div class="hosting-plan">STANDARD PLAN</div>
@@ -246,7 +246,7 @@
 							</ul>
 							<a class="hosting__planeButton" href="#">SIGNUP</a>
 						</div>
-						<div class="hosting__advancedPlan">
+						<div class="hosting__block">
 							<h1>$6</h1>
 							<p>PER MONTH</p>
 							<div class="hosting-plan">ADVANCED PLAN</div>
@@ -259,7 +259,7 @@
 							</ul>
 							<a class="hosting__planeButton" href="#">SIGNUP</a>
 						</div>
-						<div class="hosting__businessPlan">
+						<div class="hosting__block">
 							<h1>$8</h1>
 							<p>PER MONTH</p>
 							<div class="hosting-plan">BUSINESS PLAN</div>
@@ -272,7 +272,7 @@
 							</ul>
 							<a class="hosting__planeButton" href="#">SIGNUP</a>
 						</div>
-						<div class="hosting__goldPlan">
+						<div class="hosting__block">
 							<h1>$9</h1>
 							<p>PER MONTH</p>
 							<div class="hosting-plan">GOLD PLAN</div>
@@ -294,15 +294,16 @@
 					<div class="newsletter__icon-wrap">
 						<i class="fa fa-envelope-o fa-lg newsletter-icon"></i>
 					</div>
-					<div class="newsletter__head">
-						<p>SIGN UP YOUR</p>
-						<h1>NEWSLETTER</h1>
-					</div>
+					
 					<div class="newsletter__input-wrap">
-							<form action="" class="newsletter__input-form">
-									<input class="newsletter__input" type="text" placeholder="&nbsp; Enter your domain name">
-									<button class="newsletter__input-button">SIGN UP NOW</button>
-							</form>
+						<div class="newsletter__head">
+							<p>SIGN UP YOUR</p>
+							<h1>NEWSLETTER</h1>
+						</div>
+						<form action="" class="newsletter__input-form">
+							<input class="newsletter__input" type="text" placeholder="&nbsp; Enter your domain name">
+							<button class="newsletter__input-button">SIGN UP NOW</button>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -358,6 +359,5 @@
 		</footer>
 	</div>
 	<script src="js/script.js"></script>
-	
 </body>
 </html>

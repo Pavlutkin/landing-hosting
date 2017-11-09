@@ -1,0 +1,166 @@
+/********************************HOTS AND FEATURES************************/
+
+.hot-background{
+	background: $background-hotsFeatures;
+	height: 408px;
+}
+
+.hotAndFeatures-wrap{
+	max-width: 1140px;
+	margin: 0 auto;
+	@include flex;
+	justify-content: space-between;
+}
+
+.whatsHot{
+	width: 488px;
+}
+
+.whatsHot__icon{
+	padding-top:63px;
+}
+
+.whatsHot__head {
+    margin-top: 13px;
+    h1{
+        font-weight: $font-weight-extraBold;
+        color: $head-text_color;
+        font-size: 30px;
+    }
+    p{
+        color: $text_color;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}
+
+.discount-wrap{
+	width:357px;
+	height: 115px;
+	background: $white_color;
+	@include flex;
+	margin-top:34px;
+}
+
+.discount{
+	width: 332px;
+	height: 92px;
+	margin: auto;
+	border: 2px solid $ivory_color;
+}
+
+.discount__getUp{
+	font-weight: $font-weight-extraBold;
+	color: $quartz_color;
+	font-size: 14px;
+	margin: 15px 0 0 11px;
+}
+
+.discount__off{
+	float: left;
+	font-weight: $font-weight-extraBold;
+	color: $orange_color;
+	font-size: 48px;
+    margin-left: 11px;
+    span{
+        color:$blue-sky_color;
+    }
+}
+
+.discount__eachHosting{
+	margin-left: 228px;
+	color:$quartz_color;
+	font-size: 17px;
+	margin-top: 5px;
+    font-weight: $font-weight-light;
+    span{
+        display: inline-block;
+        color:$head-text_color;
+        font-weight: $font-weight-extraBold;
+        margin-top: 5px;
+    }
+}
+
+
+
+.features{
+	width: 653px;
+}
+
+.features__icon{
+	padding-top: 63px;
+}
+
+.features__head{
+    margin-top: 13px;
+    h1{
+        font-weight: $font-weight-extraBold;
+        color: $head-text_color;
+        font-size: 30px;
+    }
+    p{
+        color: $text_color;
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+}
+
+.features-wrap{
+	@include flex;
+	justify-content: space-between;
+	padding-top: 33px;
+}
+
+.features__list-wrap{
+	@include flex;
+	justify-content: space-around;
+}
+
+.features__list-first{
+    list-style:none;
+    li{
+        font-size: 14px;
+        color: $text_color;
+        padding-bottom: 25px;
+    }
+    li:last-child{
+        padding-bottom: 0;
+    }
+}
+
+.fa-angle-right{
+	padding-right: 12px;
+	color: $text_color;
+}
+
+.features__list-second{
+	list-style: none;
+	padding-left: 30px;
+    li{
+        font-size: 14px;
+        color: $text_color;
+        padding-bottom: 25px;
+    }
+    li:last-child{
+        padding-bottom: 0;
+    }
+}
+
+.features__button{
+	align-self: flex-end;
+	max-width:165px;
+	width: 25.26799387%;
+	height: 55px;
+	background: $button_color;
+	color: $white_color;
+	text-align: center;
+	line-height: 55px;
+	font-size: 13.5px;
+	font-weight: $font-weight-bold;
+}
+
+.features__button:hover{
+	background:$hover-button_color;
+}
+
+/********************************HOTS AND FEATURES************************/
