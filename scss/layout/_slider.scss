@@ -22,14 +22,19 @@
 	font-size: 0;
 	transition-property: margin-left;
 	transition-duration: .5s;
-    @include flex;
-    
+	@include flex;
+	justify-content: flex-start;
+	
     li{
         max-width: 1170px;
         width: 100%;
         @include flex;
-        justify-content: center;
-    }
+		justify-content: flex-start;
+	}
+
+	li:first-child{
+		justify-content: center;
+	}
 }
 
 .slider__button{
@@ -71,7 +76,7 @@
 	left: 47.86%;
 	@include flex;
 	justify-content: space-between;
-    align-items: center;
+	align-items: center;
 }
 .check-slide__one {
 	color: $check-slide-color;
@@ -86,4 +91,18 @@
 	color: $check-slide-active_color; 
 }
 
+
+
+
+@media (max-width:810px) {
+	.slider__list{
+		
+		
+		li{
+			img{
+				border: 1px yellow;
+			}
+		}
+	}
+}
 /********************************SLIDER*****************************/

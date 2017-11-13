@@ -2,7 +2,7 @@
 
 .search-domain-background {
 	background: $background-searchDomain;
-	height: 198px;
+	min-height: 198px;
 }
 
 .search-domain{
@@ -57,6 +57,7 @@
 	border: 0;
 	color:$text-form_color;
 	font-size: 18px;
+	margin-right: 5px;
 }
 
 .domain-name::-webkit-input-placeholder::-moz-placeholder
@@ -72,12 +73,14 @@
 #select-domain__years{
 	height: 55px;
 	max-width:163px;
+	min-width: 90px;
 	width: 16.56504065%;
 	background: $white_color;
 	outline: none;
 	border: none;
 	color:$text-form_color;
 	font-size: 18px;
+	margin-right: 5px;
 }
 
 #select-domain__years:hover{
@@ -87,12 +90,14 @@
 #select-domain__domain{
 	height: 55px;
 	max-width:163px;
+	min-width: 70px;
 	width: 16.56504065%;
 	background: $white_color;
 	outline: none;
 	border: none;
 	color:$text-form_color;
 	font-size: 18px;
+	margin-right: 5px;
 }
 
 #select-domain__domain:hover{
@@ -116,4 +121,43 @@
 	background: $hover-button_color;
 }
 
+
+
+
+
+
+
+
+@media (max-width:810px) {
+	.search-domain__icon{
+		margin-left: 2.54385965%;
+	}
+
+	.search-bottom-wrap{
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
+	.search-head{
+		margin-left: 2.54385965%;
+	}
+
+	.domain-name{
+		font-size: 14px;
+	}
+
+	.search-domain__form{
+		width: 95%;
+		padding-top: 20px;
+		font-size: 14px;
+	}
+
+	#select-domain__years{
+		
+		font-size: 14px;
+	}
+
+	#select-domain__domain{
+		font-size: 14px;
+	}
+}
 /*****************************SEARCH DOMAIN***********************/

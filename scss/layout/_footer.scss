@@ -17,6 +17,11 @@
 	flex-flow: row wrap;
 }
 
+.footer__block{
+    margin-left: 20px;
+    
+}
+
 .footer__logo-wrap{
     p{
         margin-left: 58px;
@@ -97,4 +102,23 @@
     }
 }
 
+
+
+
+
+
+
+
+
+@media(max-width:810px) {
+
+    .footer{
+        justify-content: space-around;
+    }
+
+    .footer__block{
+        margin-bottom: 30px;
+    }
+    
+}
 /********************************FOOTER*********************************/

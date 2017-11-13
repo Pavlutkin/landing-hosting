@@ -2,7 +2,7 @@
 
 .hosting-background{
 	background: $white_color;
-	height: 765px;
+	min-height: 765px;
 }
 
 .hosting{
@@ -35,9 +35,10 @@
 }
 
 .hosting__block{
-	height: 476px;
+	min-height: 476px;
 	max-width: 260px;
-	width: 22.98245614%;
+    width: 22.98245614%;
+    min-width: 190px;
 	border: 1px solid #e1eff4;
 	@include flex;
 	flex-direction: column;
@@ -104,4 +105,30 @@
 	background: $hover-button_color;
 }
 
+
+
+
+
+@media(max-width:810px) {
+    .hosting__icon{
+        margin-left: 2.54385965%;
+    }
+
+    .hosting__head{
+        margin-left: 2.54385965%;
+    }
+
+    .hosting-wrap{
+        margin-left: 2.54385965%;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    
+    .hosting__block{
+        margin-right: 20px;
+        margin-top: 20px;
+
+    }
+}
 /*********************************HOSTING*******************************/

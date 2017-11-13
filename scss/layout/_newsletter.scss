@@ -2,7 +2,7 @@
 
 .newsletter-background{
 	background: $background-newsletter;
-	height: 230px;
+	min-height: 230px;
 }
 
 .newsletter{
@@ -41,6 +41,7 @@
 	max-width: 916px;
 	width: 80.35087719%;
 	margin-left: 2.98245614%;
+	@include flex;
 }
 
 .newsletter__input{
@@ -49,9 +50,9 @@
 	width: 78.71179039%;
 	border: none;
 	outline: none;
-	float: left;
 	font-size: 18px;
 	color:$text-form_color;
+	padding: 0;
 }
 
 .newsletter__input::-webkit-input-placeholder::-moz-placeholder
@@ -65,6 +66,7 @@
 
 .newsletter__input-button{
 	max-width: 195px;
+	min-width: 112px;
 	width: 21.28820961%;
 	height: 55px;
 	background: $button_color;
@@ -79,4 +81,33 @@
 	background: $hover-button_color;
 }
 
+
+
+
+
+@media(max-width:810px) {
+	.newsletter__icon-wrap{
+		margin-left: 2.54385965%;
+	}
+
+	.newsletter__head{
+		margin-left: 2.54385965%;
+	}
+
+	.newsletter__input-wrap{
+		flex-wrap: wrap;
+		padding-bottom: 20px;
+	}
+
+	.newsletter__input-form{
+		width: 95%;
+		padding-top: 20px;
+		font-size: 14px;
+	}
+
+	.newsletter__input{
+		font-size: 14px;
+	}
+	
+}
 /****************************NEWSLETTER*******************************/

@@ -2,7 +2,7 @@
 
 .benefits-background{
 	background: $white_color;
-	height: 543px;
+	min-height: 543px;
 }
 
 .benefits{
@@ -84,5 +84,19 @@
 	color: $orange_color;
 	padding-left: 8px;
 }
+@media (min-width: 481px) and (max-width: 810px) {
 
+    .benefits-icon{
+        margin-left: 2.54385965%;
+    }
+
+    .benefits-head{
+        margin-left: 2.54385965%;
+    }
+
+    .benefits-wrap{
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+}
 /********************************BENEFITS********************************/

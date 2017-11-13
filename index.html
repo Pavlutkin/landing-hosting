@@ -13,17 +13,17 @@
 		<header class="header">
 			<div class="header-top-wrap">
 				<a class="header__logo" href="#"><img src="img/logo.png" alt="logo"></a>
-				<div class="header__top-menu">
-					<span class="top-menu__support">
-						Support: <a href="#">info@webhosting.com</a>
-					</span>
-					<span class="top-menu__register">
-						<a href="#">Register</a>
-					</span>
-					<span class="top-menu__login">
-						<a href="#">Login</a>
-					</span> 
-				</div>
+				<nav class="header__top-menu">
+					<ul class="top-menu">
+						<li class="top-menu__support">
+							<span>Support: </span>
+							<a href="#" class="link-mail">info@webhosting.com</a>
+							<a class="link-support" href="#">Support</a>
+						</li>
+						<li class="top-menu__register"><a href="#">Register</a></li>
+						<li class="top-menu__login"><a href="#">Login</a></li>
+					</ul>
+				</nav>
 			</div>
 			
 			<div class="header-bottom-wrap">
@@ -314,11 +314,11 @@
 			<div class="footer-background">
 				<div class="footer-wrap">
 					<div class="footer">
-						<div class="footer__logo-wrap">
+						<div class="footer__logo-wrap footer__block">
 							<a href="#"><img src="img/footer-logo.png" alt=""></a>
 							<p>2015 &#169; Allright Reserved</p>
 						</div>
-						<div class="footer__links">
+						<div class="footer__links footer__block">
 							<h2>QUICK LINKS</h2>
 							<div class="footer__links-lists">
 								<ul>
@@ -336,7 +336,7 @@
 								</ul>
 							</div>
 						</div>
-						<div class="footer__contact">
+						<div class="footer__contact footer__block">
 							<h2>CONTACT US</h2>
 							<div>
 								<p><span>Address : </span>lipsum text here</p>
@@ -344,7 +344,7 @@
 								<p><span>Call : </span>+87 7765 557 888</p>
 							</div>
 						</div>
-						<div class="footer__media">
+						<div class="footer__media footer__block">
 							<h2>SOCIAL MEDIA</h2>
 							<div class="icons-wrap">
 								<a href="#"><i class="fa fa-facebook fa-lg"></i></a>
@@ -358,6 +358,7 @@
 			</div>
 		</footer>
 	</div>
+	<!-- <script src="js/top-menu.js"></script> -->
 	<script src="js/script.js"></script>
 </body>
 </html>
