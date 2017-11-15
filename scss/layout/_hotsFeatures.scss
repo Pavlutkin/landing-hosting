@@ -37,7 +37,8 @@
 
 .discount-wrap{
 	width:357px;
-	height: 115px;
+	
+	min-height: 115px;
 	background: $white_color;
 	@include flex;
 	margin-top:34px;
@@ -45,41 +46,55 @@
 
 .discount{
 	width: 332px;
-	height: 92px;
-	margin: auto;
+	
+	min-height: 92px;
+	margin: 10px;
 	border: 2px solid $ivory_color;
 }
 
-.discount__getUp{
+.discount__head{
 	font-weight: $font-weight-extraBold;
 	color: $quartz_color;
 	font-size: 14px;
 	margin: 15px 0 0 11px;
 }
 
-.discount__off{
-	float: left;
-	font-weight: $font-weight-extraBold;
-	color: $orange_color;
-	font-size: 48px;
-    margin-left: 11px;
-    span{
-        color:$blue-sky_color;
-    }
+.discount__body{
+	@include flex;
+	justify-content: space-between;
+	
 }
 
-.discount__eachHosting{
-	margin-left: 228px;
-	color:$quartz_color;
+.discount__percent{
+	p{
+		font-weight: $font-weight-extraBold;
+		color: $orange_color;
+		font-size: 48px;
+		margin-left: 11px;
+		span{
+			font-weight: $font-weight-extraBold;
+			color:$blue-sky_color;
+			padding-left: 17px;
+		}
+	}
+}
+
+.discount__text{
+	padding-right: 15px;
+}
+
+.discount__text-each{
 	font-size: 17px;
 	margin-top: 5px;
-    font-weight: $font-weight-light;
-    span{
-        display: inline-block;
-        color:$head-text_color;
-        font-weight: $font-weight-extraBold;
-        margin-top: 5px;
-    }
+	font-weight: $font-weight-light;
+	color: $quartz_color;
+}
+
+.discount__text-host{
+	font-size: 17px;
+	margin-top: 5px;
+	font-weight: $font-weight-extraBold;
+	color: $head-text_color;
 }
 
 
@@ -178,8 +193,60 @@
 		margin-left: 2.54385965%;
 	}
 
+	
+
+	.discount__head{
+		text-align: center;
+	}
+
+	.discount__body{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.discount__percent{
+		margin-right: 10px;
+	}
+
+	.discount__text{
+		@include flex;
+		padding: 0;
+		margin-bottom: 5px;
+	}
+
+	.discount__text-host{
+		margin-top: 0;
+		margin-left: 10px;
+	}
+	
+	.discount__text-each{
+		margin-left: 20px;
+		margin-top: 0;
+	}
+
+
 	.features{
 		margin-left: 2.54385965%;
 	}
+}
+
+
+
+
+@media(max-width:480px) {
+	.discount-wrap{
+		width: 73.1557377%;
+		min-width: 257px;
+	}
+
+	.discount{
+		width: 92.99719888%;
+		margin: 10px;
+	}
+
+	
+
+	
+	
 }
 /********************************HOTS AND FEATURES************************/

@@ -92,7 +92,8 @@ body {
   align-items: center;
   width: 97.43589744%;
   min-height: 99px;
-  margin: auto; }
+  margin: auto;
+  content: '>'; }
 
 .header__top-menu {
   border-top: 1px solid #9ba4b0;
@@ -134,11 +135,8 @@ body {
 .top-menu__login a {
   margin: 0 5px 0 20px; }
 
-.bar-top-menu {
-  display: none; }
-
 .header-bottom-wrap {
-  max-width: 1140px;
+  content: '>';
   width: 100%;
   margin: auto; }
 
@@ -238,7 +236,7 @@ body {
   background: #222836; }
 
 .slider {
-  max-width: 1170px;
+  max-width: 1140px;
   overflow: hidden;
   position: relative; }
 
@@ -257,7 +255,7 @@ body {
   display: flex;
   justify-content: flex-start; }
   .slider__list li {
-    max-width: 1170px;
+    max-width: 1140px;
     width: 100%;
     display: -webkit-box;
     display: -moz-box;
@@ -279,18 +277,19 @@ body {
   color: #fff;
   cursor: pointer; }
 
+.slider__button:hover {
+  background: #838383; }
+
 .slider__button:focus {
   outline: none; }
 
 .slider__button-left {
   display: none;
-  margin-left: 15px;
   position: absolute;
   top: 44.38%;
-  left: 0.0076%; }
+  left: 0; }
 
 .slider__button-right {
-  margin-right: 15px;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -298,10 +297,11 @@ body {
   display: flex;
   position: absolute;
   top: 44.38%;
-  right: 0.0076%; }
+  right: 0; }
 
 .slider__check-slide {
   width: 4.16%;
+  min-width: 48px;
   position: absolute;
   bottom: 10.5%;
   left: 47.86%;
@@ -325,9 +325,6 @@ body {
 .check-item {
   color: #5278db; }
 
-@media (max-width: 810px) {
-  .slider__list li img {
-    border: 1px yellow; } }
 /********************************SLIDER*****************************/
 /*****************************SEARCH DOMAIN***********************/
 .search-domain-background {
@@ -541,7 +538,7 @@ body {
   color: #ff8261;
   padding-left: 8px; }
 
-@media (min-width: 481px) and (max-width: 810px) {
+@media (max-width: 810px) {
   .benefits-icon {
     margin-left: 2.54385965%; }
 
@@ -587,7 +584,7 @@ body {
 
 .discount-wrap {
   width: 357px;
-  height: 115px;
+  min-height: 115px;
   background: #fff;
   display: -webkit-box;
   display: -moz-box;
@@ -598,36 +595,48 @@ body {
 
 .discount {
   width: 332px;
-  height: 92px;
-  margin: auto;
+  min-height: 92px;
+  margin: 10px;
   border: 2px solid #fffbde; }
 
-.discount__getUp {
+.discount__head {
   font-weight: 800;
   color: #97947f;
   font-size: 14px;
   margin: 15px 0 0 11px; }
 
-.discount__off {
-  float: left;
+.discount__body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between; }
+
+.discount__percent p {
   font-weight: 800;
   color: #ff8261;
   font-size: 48px;
   margin-left: 11px; }
-  .discount__off span {
-    color: #52cbf8; }
+  .discount__percent p span {
+    font-weight: 800;
+    color: #52cbf8;
+    padding-left: 17px; }
 
-.discount__eachHosting {
-  margin-left: 228px;
-  color: #97947f;
+.discount__text {
+  padding-right: 15px; }
+
+.discount__text-each {
   font-size: 17px;
   margin-top: 5px;
-  font-weight: 300; }
-  .discount__eachHosting span {
-    display: inline-block;
-    color: #556b72;
-    font-weight: 800;
-    margin-top: 5px; }
+  font-weight: 300;
+  color: #97947f; }
+
+.discount__text-host {
+  font-size: 17px;
+  margin-top: 5px;
+  font-weight: 800;
+  color: #556b72; }
 
 .features {
   width: 653px; }
@@ -709,8 +718,43 @@ body {
   .whatsHot {
     margin-left: 2.54385965%; }
 
+  .discount__head {
+    text-align: center; }
+
+  .discount__body {
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .discount__percent {
+    margin-right: 10px; }
+
+  .discount__text {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0;
+    margin-bottom: 5px; }
+
+  .discount__text-host {
+    margin-top: 0;
+    margin-left: 10px; }
+
+  .discount__text-each {
+    margin-left: 20px;
+    margin-top: 0; }
+
   .features {
     margin-left: 2.54385965%; } }
+@media (max-width: 480px) {
+  .discount-wrap {
+    width: 73.1557377%;
+    min-width: 257px; }
+
+  .discount {
+    width: 92.99719888%;
+    margin: 10px; } }
 /********************************HOTS AND FEATURES************************/
 /*********************************HOSTING*******************************/
 .hosting-background {

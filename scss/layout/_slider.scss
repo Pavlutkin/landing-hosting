@@ -9,7 +9,7 @@
 }
 
 .slider{
-	max-width: 1170px;
+	max-width: 1140px;
 	overflow: hidden;
 	position: relative;
 }
@@ -26,10 +26,11 @@
 	justify-content: flex-start;
 	
     li{
-        max-width: 1170px;
+        max-width: 1140px;
         width: 100%;
         @include flex;
 		justify-content: flex-start;
+		
 	}
 
 	li:first-child{
@@ -49,28 +50,32 @@
 	cursor: pointer;
 }
 
+.slider__button:hover{
+	background: #838383;
+	
+}
+
 .slider__button:focus{
     outline: none;
 }
 
 .slider__button-left {
 	display: none;
-	margin-left: 15px;
 	position:absolute;
 	top:44.38%;
-	left: 0.0076%;
+	left: 0;
 }
 
 .slider__button-right{
-	margin-right: 15px;
 	@include flex;
 	position:absolute;
 	top: 44.38%;
-	right: 0.0076%;
+	right: 0;
 }
 
 .slider__check-slide{
 	width:4.16%;
+	min-width: 48px;
 	position: absolute;
 	bottom: 10.5%;
 	left: 47.86%;
@@ -98,11 +103,7 @@
 	.slider__list{
 		
 		
-		li{
-			img{
-				border: 1px yellow;
-			}
-		}
+		
 	}
 }
 /********************************SLIDER*****************************/

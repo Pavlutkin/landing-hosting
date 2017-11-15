@@ -16,6 +16,7 @@
     width: 97.43589744%;
     min-height: 99px;
 	margin: auto;
+	content: '>';
 }
 
 .header__top-menu{
@@ -70,18 +71,16 @@
     }
 }
 
-.bar-top-menu{
-    display: none;
-}
+
 .header-bottom-wrap{
-    max-width: 1140px;
+    content: '>';
     width: 100%;
     margin: auto;
 }
 .header__main-menu{
     @include flex;
     width: 100%;
-
+    
     a{
         flex-grow: 1;
         text-align: center;
