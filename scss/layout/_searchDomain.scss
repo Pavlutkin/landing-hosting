@@ -160,4 +160,34 @@
 		font-size: 14px;
 	}
 }
+
+
+
+@media(max-width:480px) {
+
+	.search-domain__form{
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		// justify-content: flex-start;
+		// flex-wrap: wrap;
+	}
+
+	.domain-name{
+		min-width: 250px;
+		margin-bottom: 10px;
+	}
+
+	#select-domain__years{
+		margin-bottom: 10px;
+	}
+
+	#select-domain__domain{
+		margin-bottom: 10px;
+	}
+
+	.button-search{
+		min-width: 200px;
+	}
+}
 /*****************************SEARCH DOMAIN***********************/

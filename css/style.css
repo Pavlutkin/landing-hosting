@@ -233,7 +233,11 @@ body {
   display: flex;
   max-width: 1970px;
   justify-content: center;
-  background: #222836; }
+  background: #222836;
+  height: 520px; }
+
+.banner {
+  display: none; }
 
 .slider {
   max-width: 1140px;
@@ -325,6 +329,17 @@ body {
 .check-item {
   color: #5278db; }
 
+@media (max-width: 1140px) {
+  .banner {
+    display: block;
+    max-width: 1140px;
+    width: 100%;
+    background: url("../img/slide.jpg") center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+
+  .slider {
+    display: none; } }
 /********************************SLIDER*****************************/
 /*****************************SEARCH DOMAIN***********************/
 .search-domain-background {
@@ -461,6 +476,24 @@ body {
 
   #select-domain__domain {
     font-size: 14px; } }
+@media (max-width: 480px) {
+  .search-domain__form {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; }
+
+  .domain-name {
+    min-width: 250px;
+    margin-bottom: 10px; }
+
+  #select-domain__years {
+    margin-bottom: 10px; }
+
+  #select-domain__domain {
+    margin-bottom: 10px; }
+
+  .button-search {
+    min-width: 200px; } }
 /*****************************SEARCH DOMAIN***********************/
 /********************************BENEFITS********************************/
 .benefits-background {
@@ -547,7 +580,10 @@ body {
 
   .benefits-wrap {
     justify-content: space-around;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .fa-cog .fa-lock {
+    padding: 0; } }
 /********************************BENEFITS********************************/
 /********************************HOTS AND FEATURES************************/
 .hot-background {
@@ -750,11 +786,19 @@ body {
 @media (max-width: 480px) {
   .discount-wrap {
     width: 73.1557377%;
-    min-width: 257px; }
+    min-width: 257px;
+    margin: 34px auto 0 auto; }
 
   .discount {
     width: 92.99719888%;
-    margin: 10px; } }
+    margin: 10px; }
+
+  .features-wrap {
+    flex-wrap: wrap; }
+
+  .features__button {
+    min-width: 165px;
+    margin: 20px auto 0 auto; } }
 /********************************HOTS AND FEATURES************************/
 /*********************************HOSTING*******************************/
 .hosting-background {
@@ -991,11 +1035,15 @@ body {
   color: #909aad;
   font-size: 14px; }
 
-.footer__links h2 {
-  color: #fff;
-  font-weight: 800;
-  font-size: 14px;
-  padding-bottom: 28px; }
+.footer__links {
+  max-width: 208px;
+  width: 18.24561404%;
+  min-width: 170px; }
+  .footer__links h2 {
+    color: #fff;
+    font-weight: 800;
+    font-size: 14px;
+    padding-bottom: 28px; }
 
 .footer__links-lists {
   display: -webkit-box;
@@ -1003,8 +1051,7 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
-  width: 208px; }
+  justify-content: space-between; }
   .footer__links-lists ul {
     list-style: none; }
     .footer__links-lists ul li {
@@ -1056,6 +1103,9 @@ body {
 
   .footer__block {
     margin-bottom: 30px; } }
+@media (max-width: 480px) {
+  .footer {
+    margin: 0 auto; } }
 /********************************FOOTER*********************************/
 
 /*# sourceMappingURL=style.css.map */

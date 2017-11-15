@@ -31,6 +31,9 @@
 }
 
 .footer__links{
+    max-width: 208px;
+    width: 18.24561404%;
+    min-width: 170px;
     h2{
         color: $white_color;
         font-weight: $font-weight-extraBold;
@@ -42,7 +45,7 @@
 .footer__links-lists{
 	@include flex;
 	justify-content: space-between;
-    width: 208px;
+    
     ul{
         list-style: none;
         li{
@@ -119,6 +122,18 @@
     .footer__block{
         margin-bottom: 30px;
     }
+    
+}
+
+
+
+
+
+@media(max-width:480px) {
+    .footer{
+        margin: 0 auto;
+    }
+
     
 }
 /********************************FOOTER*********************************/

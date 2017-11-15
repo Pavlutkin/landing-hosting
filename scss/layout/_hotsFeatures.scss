@@ -237,6 +237,7 @@
 	.discount-wrap{
 		width: 73.1557377%;
 		min-width: 257px;
+		margin: 34px auto 0 auto;
 	}
 
 	.discount{
@@ -244,9 +245,15 @@
 		margin: 10px;
 	}
 
-	
+	.features-wrap{
+		flex-wrap: wrap;
+		
+	}
 
-	
+	.features__button{
+		min-width: 165px;
+		margin: 20px auto 0 auto;
+	}
 	
 }
 /********************************HOTS AND FEATURES************************/

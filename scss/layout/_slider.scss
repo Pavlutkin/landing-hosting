@@ -6,6 +6,12 @@
 	max-width: 1970px;
 	justify-content: center;
 	background: $background-slider;
+	height: 520px;
+}
+
+
+.banner{
+	display: none;
 }
 
 .slider{
@@ -96,7 +102,19 @@
 	color: $check-slide-active_color; 
 }
 
-
+@media(max-width:1140px) {
+	.banner{
+		display: block;
+		max-width: 1140px;
+		width: 100%;
+		background:url("../img/slide.jpg") center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.slider{
+		display: none;
+	}
+}
 
 
 @media (max-width:810px) {
